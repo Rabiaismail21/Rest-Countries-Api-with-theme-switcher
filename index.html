@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,600,800"
+      rel="stylesheet"
+    />
+    <title>Frontend Mentor | Rest Countries API</title>
+  </head>
+
+  <body class="bg-light">
+    <!-- header -->
+    <header class="header light-header dark-header">
+      <div class="inner-header">
+        <h1 class="title">Where in the world?</h1>
+        <div class="theme-toggle">
+          <div class="icon-toggle">
+            <ion-icon name="moon" class="moon-icon"></ion-icon>
+            <ion-icon
+              name="sunny-outline"
+              class="sun-icon display-none"
+            ></ion-icon>
+          </div>
+          <p class="theme-text">Dark Mode</p>
+        </div>
+      </div>
+    </header>
+    <!-- main content -->
+    <main class="main-content">
+      <!-- main header -->
+      <div class="search-country-field">
+        <div class="input-field light-input-field dark-input-field">
+          <ion-icon name="search" class="search-icon"></ion-icon>
+          <input
+            type="text"
+            name="text"
+            class="input-text"
+            placeholder="Search for a country..."
+          />
+        </div>
+        <div class="search-region light-search-region dark-search-region">
+          <p class="filter-region">Filter by region</p>
+          <ion-icon name="chevron-down" class="dropdown-icon"></ion-icon>
+          <ion-icon name="chevron-up" class="up-icon display-none"></ion-icon>
+          <ul
+            class="region-options light-region-options dark-region-options display-none"
+          >
+            <li class="region dark-region">All</li>
+            <li class="region dark-region">Africa</li>
+            <li class="region dark-region">America</li>
+            <li class="region dark-region">Asia</li>
+            <li class="region dark-region">Europe</li>
+            <li class="region dark-region">Oceania</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- rest countries container -->
+      <div class="countries-container"></div>
+      <!-- country detail -->
+      <div
+        class="outer-container toggle dark-outer-container light-outer-container"
+      ></div>
+    </main>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="main.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
